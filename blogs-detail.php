@@ -61,15 +61,7 @@
                         </div>
                     </div>
                 </div>
-<!--                <div ng-if="!comments.name">
-                    <div>
-                        <div class="media">
-                            <div class="media-body" >
-                                <h2 class="media-heading">No Comments</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
+
             </div>
             <div class="col-md-5">
                 <img src="uploads/{{blog_detail.image}}" alt="" class="img-responsive">
@@ -106,29 +98,7 @@
         </div>
     </div>
 </section>
-<!--<section class="section-small bg-white">
-    <div class="container grid-pad">
-        <h3 class="cust-head">Recent Blogs</h3>
-        <div class="row">
-            <div class="col-sm-6 col-md-3"><a href=""><img src="assets/user/img/portfolio/1.jpg" alt="" class="img-responsive center-block"/>
-                    <h5>Lorem ipsum</h5></a>
-                <p>Lorem ipsum dolor sit amet, consectetur elit. Nulla convallis pulvinar vestibulum.</p>
-            </div>
-            <div class="col-sm-6 col-md-3"><a href=""><img src="assets/user/img/portfolio/3.jpg" alt="" class="img-responsive center-block"/>
-                    <h5>Consectetur elit</h5></a>
-                <p>Lorem ipsum dolor sit amet, consectetur elit. Nulla convallis pulvinar vestibulum.</p>
-            </div>
-            <div class="col-sm-6 col-md-3"><a href=""><img src="assets/user/img/portfolio/9.jpg" alt="" class="img-responsive center-block"/>
-                    <h5>Pulvinar vestibulum</h5></a>
-                <p>Lorem ipsum dolor sit amet, consectetur elit. Nulla convallis pulvinar vestibulum.</p>
-            </div>
-            <div class="col-sm-6 col-md-3"><a href=""><img src="assets/user/img/portfolio/15.jpg" alt="" class="img-responsive center-block"/>
-                    <h5>Sit Amet Elit</h5></a>
-                <p>Lorem ipsum dolor sit amet, consectetur elit. Nulla convallis pulvinar vestibulum.</p>
-            </div>
-        </div>
-    </div>
-</section>-->
+
 <div class="section section-small">
     <div class="container">
         <div class="row">
@@ -147,48 +117,6 @@
 
 
 <script type="text/javascript">
-
-
-
-
-(function () {
-FB.init({
-appId: 356890211451683, cookie: true, status: true, xfbml: true, oauth: true
-});
-$("#shareBtn").click(function () {
-var url = "";
-console.log(url);
-// FB.ui({
-// method: "feed",
-// link: "{var name='siteurl'}/individual_deals.php?did={var name='dealId'}",
-// caption: "Happiing.com/cashback",
-// description: "This is description tobe shown",
-// picture: "{var name='siteurl'}/images/merchant/{var name='banner'}"
-// });
-FB.ui({
-method: 'share_open_graph',
-action_type: 'og.shares',
-action_properties: JSON.stringify({
-object: {
-'og:url': "http://www.valuequo.com/blogs-detail/1", // your url to share
-'og:title': "ValQuo",
-'og:site_name': '',
-'og:description': "ValueQuo - Smart Business",
-'og:image': "assets/user/img/newlogo.png",
-'og:image:width': '200', //size of image in pixel
-'og:image:height': '200'
-}
-})
-}, function (response) {
-console.log("response is ", response);
-});
-});
-})();
-</script> 
-
-
-
-
 
 
 
